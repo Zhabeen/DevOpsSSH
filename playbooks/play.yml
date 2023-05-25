@@ -1,0 +1,13 @@
+---
+- hosts: 192.168.56.101
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    student
+  roles:
+   - PHP
+   - nginx

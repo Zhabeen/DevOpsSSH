@@ -1,0 +1,5 @@
+---
+- name: Install php Repo
+  apt:
+    name=php
+    state=present
